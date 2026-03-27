@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Workspace | Análisis de Cumplimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --google-blue: #4285F4;
+            --google-red: #EA4335;
+            --google-yellow: #FBBC04;
+            --google-green: #34A853;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .google-font {
+            font-family: 'Product Sans', 'Arial', sans-serif;
+        }
+
+        .feature-card {
+            border-radius: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pill-blue { background: #E8F0FE; color: #1967D2; }
+        .pill-red { background: #FCE8E6; color: #C5221F; }
+        .pill-green { background: #E6F4EA; color: #137333; }
+        .pill-yellow { background: #FEF7E0; color: #EA8600; }
+        
+        .ref-link:hover {
+            color: var(--google-blue);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-700">
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-16 px-6 bg-gradient-to-b from-blue-50/50 to-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Logo Decorativo -->
+            <div class="flex justify-center items-center gap-2 mb-8">
+                <div class="flex gap-1">
+                    <div class="w-3 h-8 bg-[#4285F4] rounded-full"></div>
+                    <div class="w-3 h-8 bg-[#EA4335] rounded-full"></div>
+                    <div class="w-3 h-8 bg-[#FBBC04] rounded-full"></div>
+                    <div class="w-3 h-8 bg-[#34A853] rounded-full"></div>
+                </div>
+                <span class="text-2xl font-medium text-gray-600 ml-2 google-font tracking-tight">Google Workspace</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                Ficha Técnica
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed">
+                Análisis detallado de cumplimiento y requerimientos técnicos para las ediciones Enterprise y Frontline de Google Workspace.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- SECCIÓN 1: Enterprise Standard -->
+        <section id="req1">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3">
+                    <span class="pill-blue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Requerimiento 01</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-4 mb-6 leading-snug">Enterprise Standard</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        La licencia Enterprise Standard de Google Workspace cumple con la gran mayoría de los puntos solicitados, aunque presenta algunas limitaciones específicas en cuanto al alcance de las búsquedas y los niveles de soporte avanzado.
+                    </p>
+                </div>
+                
+                <div class="md:w-2/3 grid gap-4">
+                    <div class="feature-card p-6 border border-gray-100 bg-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-database text-blue-500"></i>
+                            <h3 class="font-bold text-gray-800">Almacenamiento de 5TB</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Cumple. La edición Enterprise Standard ofrece inicialmente 5 TB de almacenamiento conjunto por usuario. En organizaciones con 5 o más usuarios, Google puede proporcionar almacenamiento adicional a su discreción tras una solicitud razonable.</p>
+                    </div>
+
+                    <div class="feature-card p-6 border border-gray-100 bg-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-shield-halved text-blue-500"></i>
+                            <h3 class="font-bold text-gray-800">Servicio Google Vault</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Cumple. Incluye Google Vault para la retención, búsqueda y exportación de datos. Este servicio gestiona datos de Gmail, Drive, Google Chat (con historial activado), Grupos de Google y eventos de registro de Google Voice para eDiscovery.</p>
+                    </div>
+
+                    <div class="feature-card p-6 border border-gray-100 bg-blue-50/30">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-video text-blue-500"></i>
+                            <h3 class="font-bold text-gray-800">Videoconferencias (Meet)</h3>
+                        </div>
+                        <div class="text-gray-600 text-sm space-y-3">
+                            <p>Cumple.</p>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 list-none">
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Permite hasta 500 participantes por reunión.</li>
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Ofrece transmisión en vivo interna de hasta 10,000 espectadores.</li>
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Incluye funciones de levantar la mano, encuestas y Q&A.</li>
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Permite grabaciones de hasta 24 horas y transcripciones.</li>
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Incluye controles de anfitrión y cancelación de ruido.</li>
+                                <li class="flex gap-2"><span class="text-blue-500">•</span> Registros de auditoría exportables a BigQuery.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card p-6 border border-amber-100 bg-amber-50/20">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-search text-amber-500"></i>
+                            <h3 class="font-bold text-gray-800">Google Cloud Search</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Cumple parcialmente. Ofrece búsqueda rápida por palabra clave, pero en esta edición está limitada exclusivamente a los servicios de Google dentro de la organización. La integración de repositorios y datos de terceros requiere la edición Enterprise Plus.</p>
+                    </div>
+
+                    <div class="feature-card p-6 border border-gray-100 bg-white">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-lock text-blue-500"></i>
+                            <h3 class="font-bold text-gray-800">Seguridad y DLP</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Cumple. Incluye Prevención de la pérdida de datos (DLP) para Gmail y Drive. Posee el Centro de Seguridad, Acceso Adaptado al Contexto y gestión empresarial de extremos (endpoints) con exportación a BigQuery.</p>
+                    </div>
+
+                    <div class="feature-card p-6 border border-amber-100 bg-amber-50/20">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-headset text-amber-500"></i>
+                            <h3 class="font-bold text-gray-800">Soporte</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Cumple parcialmente. Incluye "Asistencia Mejorada" (Enhanced Support) 24/7 con respuesta de 1 hora para P1. Sin embargo, las "revisiones operativas del estado" y el administrador técnico son exclusivos de la Asistencia Premium.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: Enterprise Starter -->
+        <section id="req2">
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-start">
+                <div class="md:w-1/3">
+                    <span class="pill-yellow px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Requerimiento 02</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-4 mb-6 leading-snug">Enterprise Starter</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        La edición Enterprise Starter cumple con muchos de los requisitos de almacenamiento y seguridad básica, pero tiene limitaciones importantes en funciones avanzadas de Meet y controles granulares.
+                    </p>
+                </div>
+
+                <div class="md:w-2/3 space-y-4">
+                    <div class="bg-gray-50 rounded-3xl p-8 space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-gray-800 mb-2">Almacenamiento de 1 TB</h4>
+                                <p class="text-xs text-gray-600">Cumple. Ofrece 1 TB de almacenamiento conjunto por usuario para Gmail, Drive y Fotos.</p>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-gray-800 mb-2">Videoconferencias</h4>
+                                <p class="text-xs text-gray-600">Hasta 250 participantes. Incluye streaming interno (10k), grabaciones, breakout rooms y cancelación de ruido.</p>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-gray-800 mb-2">Seguridad y Acceso</h4>
+                                <p class="text-xs text-gray-600">Incluye 2FA, gestión de llaves de seguridad, Centro de alertas y colaboración con dominios externos.</p>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-gray-800 mb-2">Google Drive</h4>
+                                <p class="text-xs text-gray-600">Unidades compartidas y Cloud Search (solo servicios de Google) incluido.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 bg-red-50/50 rounded-2xl p-6 border border-red-100">
+                            <h3 class="text-red-700 font-bold mb-4 flex items-center gap-2">
+                                <i class="fas fa-minus-circle"></i> Puntos que NO cumple o no figuran:
+                            </h3>
+                            <ul class="space-y-4 text-sm text-gray-700">
+                                <li class="flex gap-3"><span class="font-bold text-red-700">01.</span> No incluye seguimiento de asistencia, transcripciones ni auditoría de Meet con BigQuery.</li>
+                                <li class="flex gap-3"><span class="font-bold text-red-700 text-nowrap">02.</span> La liberación automática de salas y gestiones inteligentes no están disponibles.</li>
+                                <li class="flex gap-3"><span class="font-bold text-red-700 text-nowrap">03.</span> No incluye reglas DLP para detectar contenido sensible en Drive y Chat.</li>
+                            </ul>
+                        </div>
+
+                        <p class="text-sm font-medium text-amber-700 italic border-t border-gray-200 pt-6">
+                            En resumen, Enterprise Starter es adecuado para el almacenamiento de 1 TB y reuniones de hasta 250 personas, pero carece de herramientas de auditoría profunda y seguridad preventiva (DLP).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Frontline -->
+        <section id="req3">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3">
+                    <span class="pill-green px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Requerimiento 03</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-4 mb-6 leading-snug">Google Workspace Frontline</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cumplen con la mayoría de los puntos mencionados, aunque presentan una limitación importante respecto a la herramienta de búsqueda solicitada.
+                    </p>
+                </div>
+
+                <div class="md:w-2/3">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex items-start gap-4 p-6 border-b border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-cloud text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">5 GB de almacenamiento</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Cumple. Tanto Frontline Starter como Frontline Standard ofrecen 5 GB de almacenamiento conjunto por usuario compartidos entre Gmail, Drive y Fotos.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-6 border-b border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-users text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Videoconferencias Meet</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Cumple. Ambas versiones permiten reuniones de hasta 100 participantes e incluyen funciones básicas como levantar la mano.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-6 border-b border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-user-shield text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Seguridad y DLP</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">Cumple. Ofrece 2FA, SSL y listas blancas. Las reglas de contenido avanzado (DLP) se incluyen específicamente en la edición Frontline Standard.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-6 bg-red-50/30 rounded-2xl border border-red-50">
+                            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-search-minus text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-red-800 mb-1">Drive: Cloud Search</h3>
+                                <p class="text-sm text-gray-600 leading-relaxed">No cumple. La función de Google Cloud Search no está incluida en las ediciones Frontline. Suele estar reservada para Business Standard/Plus o Enterprise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-8 text-center bg-gray-50 rounded-3xl">
+                        <p class="text-gray-600 text-sm italic">
+                            En resumen, la edición Frontline cumple con los requisitos de almacenamiento, capacidad de Meet y seguridad básica, pero carece de <span class="font-bold">Google Cloud Search</span> para la búsqueda interna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE REFERENCIAS -->
+        <section id="references" class="pt-12 border-t border-gray-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 google-font">Referencias Oficiales</h2>
+            <div class="space-y-4">
+                <div class="p-6 bg-gray-50 rounded-3xl border border-transparent hover:border-blue-100 transition-colors">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm text-blue-500 shrink-0">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <h3 class="font-bold text-gray-800 mb-1">Controles de seguridad avanzada y cumplimiento</h3>
+                            <a href="https://support.google.com/a/answer/11117391?sjid=8779574017854505483-NC&src=supportwidget0&hl=es&authuser=0#security-heading" target="_blank" class="text-xs text-blue-600 hover:underline break-all block">
+                                https://support.google.com/a/answer/11117391?sjid=8779574017854505483-NC&src=supportwidget0&hl=es&authuser=0#security-heading
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-3xl border border-transparent hover:border-blue-100 transition-colors">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm text-blue-500 shrink-0">
+                            <i class="fas fa-list-ul"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <h3 class="font-bold text-gray-800 mb-1">Comparativa detallada de SKUs y Ediciones</h3>
+                            <a href="https://knowledge.workspace.google.com/admin/getting-started/editions/compare-google-workspace-editions?hl=es" target="_blank" class="text-xs text-blue-600 hover:underline break-all block">
+                                https://knowledge.workspace.google.com/admin/getting-started/editions/compare-google-workspace-editions?hl=es
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="py-12 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-sm text-gray-400">© 2024 Análisis de Licenciamiento Workspace</p>
+        </div>
+    </footer>
+
+</body>
+</html>
